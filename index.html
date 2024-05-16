@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="script1.js">
+  
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <h2>Contact Us </h2>
 
-<form action="submit.php" method="post"> 
+<form id="contact-form"> 
     <label for="name">Name:</label><br>
     <input type="text" id="name" name="name"><br>
 
@@ -23,6 +23,7 @@
     <label for="message">Message:</label><br>
     <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
 
-    <input type="submit" value="Submit">
+    <button type="submit" id="submit" onclick="result()">submit</button>
+    <script src="script1.js"></script>
 </body>
 </html>
